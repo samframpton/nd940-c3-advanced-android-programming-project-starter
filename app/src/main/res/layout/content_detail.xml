@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/content_detail_scene"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DetailActivity"
+    tools:showIn="@layout/activity_detail">
+
+    <TextView
+        android:id="@+id/label_detail_file_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="@string/label_detail_file_name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_detail_file_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/text_detail_file_name"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/text_detail_file_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toRightOf="@id/label_detail_file_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        tools:text="LoadApp - Current repository by Udacity" />
+
+    <TextView
+        android:id="@+id/label_detail_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="@string/label_detail_status"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_detail_status"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/text_detail_status"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/text_detail_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toRightOf="@id/label_detail_status"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_detail_file_name"
+        app:layout_constraintWidth_percent="0.5"
+        tools:text="Success" />
+
+    <Button
+        android:id="@+id/button_detail_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/button_detail_ok"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,8 +1,6 @@
 package com.udacity
 
-
 sealed class ButtonState {
-    object Clicked : ButtonState()
+    object Idle : ButtonState()
     object Loading : ButtonState()
-    object Completed : ButtonState()
 }
